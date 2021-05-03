@@ -58,12 +58,12 @@ import homeQl from '../img/projects/ql/home.png'
 import heroesQl from '../img/projects/ql/heroesQl.png'
 import worldsQl from '../img/projects/ql/worldsQl.png'
 import collectionQl from '../img/projects/ql/collectionQl.png'
-import aboutKanc1 from '../img/projects/kanc/about.png'
+import homeNight from '../img/projects/ql/homeNight.png'
 import mobileHomeQl from '../img/projects/ql/mobileHome.jpg'
 import mobileWorldsQl from '../img/projects/ql/mobileWorlds.jpg'
 
 
-let qlSrcs = [homeQl, heroesQl, worldsQl, collectionQl, aboutKanc1, mobileHomeQl, mobileWorldsQl]
+let qlSrcs = [homeQl, heroesQl, worldsQl, collectionQl, homeNight, mobileHomeQl, mobileWorldsQl]
 let qlPics = []
 
 createImgs(qlSrcs, qlPics)

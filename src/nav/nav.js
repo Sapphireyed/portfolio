@@ -5,7 +5,7 @@ nav.innerHTML = '<nav>' +
     '<a href="index.html">Home</a>' +
     '<a href="about.html">About</a>' +
     '<a href="work.html">Work</a>' +
-    '<a href="#">Contact</a>' +
+    '<a href="mailto:malgorzata.k.szulc@gmail.com">Contact</a>' +
     '</div>' +
 
     '</nav >' 

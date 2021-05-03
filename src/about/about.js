@@ -136,7 +136,7 @@ document.body.innerHTML = '<section><div id="story">' +
     '<div class="story" id="bookworm">' +
         '<div class="heading"><h1>I\'m a <span class="blue">Book worm</span></h1><!--<img src="img/dice.png" />--></div>' +
         '<p>' +
-            'Always have been. As a child I never complained about the length of a book. The on;y thing that matters is - it is good.' +
+            'Always have been. As a child I never complained about the length of a book. The on;y thing that matters is - is it good.' +
         '</p>' +
         '<p>' +
             'If it is, let it have 1000 pages, I\'ll happily read.' +
@@ -145,10 +145,10 @@ document.body.innerHTML = '<section><div id="story">' +
             'If it\'s good - the loner, the better. I get to like and dislike particular characters and don\'t want them to go away too soon.' +
         '</p>' +
         '<p>' +
-            'I dreamed abot being a writer, years ago. But it\'s not for me. I found a different hobby that givesme more joy that writing ever could.' +
+            'I dreamed abot being a writer, years ago. But it\'s not for me. I found a different hobby that gives me more joy than writing ever could.' +
         '</p>' +
         '<p>' +
-            'I bet you already know what.' +
+            '<em>I bet you already know what.<em>' +
         '</p>' +
         '<p>' +
 
@@ -187,7 +187,7 @@ document.body.innerHTML = '<section><div id="story">' +
             '<p>' +
             'So, do you need a website? ' +
             'Do you seek a creative, open-minded front-end developer to join your team? <br />' +
-                '<span class="blue">Contact me</span>' +
+                '<span class="blue"><a href="mailto:malgorzata.k.szulc@gmail.com">Contact me</a></span>' +
 
             '</p>' +
 
