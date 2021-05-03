@@ -1,0 +1,157 @@
+﻿section {
+    background: url('../img/mainBg.jpg');
+    background-size: cover;
+}
+
+/* story */
+#story {
+    width: 55%;
+    padding: 3% 0;
+ //   margin-top:120px;
+}
+
+.story:not(:first-child) {
+    display: none;
+}
+
+.story {
+
+    h1 {
+        color: white;
+        text-align: center;
+        width: 50%;
+        margin: 5px auto;
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    h1:after {
+        content: '\00a0';
+        background-image: radial-gradient(at 50% 0, #94c1ff 0%, #012145 50%, transparent 75%);
+        background-size: 100% 5px;
+        margin-top: 4px;
+        background-repeat: no-repeat;
+        float: left;
+        width: 100%;
+        transform: scale(0);
+        animation: popup 0.7s linear forwards;
+    }
+
+    p {
+        margin: 0;
+        opacity: 0;
+        padding: 1% 12%;
+        color: white;
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 20px;
+        animation: fadeIn 3s ease forwards;
+    }
+
+    p:nth-child(2) { animation-delay: 1s }
+    p:nth-child(3) { animation-delay: 3s }
+    p:nth-child(4) { animation-delay: 5s }
+    p:nth-child(5) { animation-delay: 7s }
+    p:nth-child(6) { animation-delay: 9s }
+    p:nth-child(7) { animation-delay: 11s }
+    p:nth-child(8) { animation-delay: 13s }
+}
+
+
+@keyframes fadeIn { //for story parts
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* buttons */
+
+.btns {
+    width: 100%;
+    bottom: 8%;
+    padding: 2% 0;
+
+    button {
+        width: 80%;
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+        padding: 7px 20px;
+        background: rgb(0,0,0);
+        background: linear-gradient(50deg, rgba(0,0,0,1) 7%, rgba(1,33,69,1) 21%, rgba(31,78,162,1) 64%, rgba(69,139,233,1) 80%, rgba(243,243,255,1) 94%);
+        color: white;
+        font-size: 18px;
+    }
+
+    button:hover {
+        cursor: url('../img/cursorSapphClick.png'), auto;
+        animation: gradientLeft 0.4s;
+    }
+}
+
+@keyframes gradientLeft {
+    0% {
+        background: linear-gradient(50deg, rgba(0,0,0,1) 7%, rgba(1,33,69,1) 21%, rgba(31,78,162,1) 64%, rgba(69,139,233,1) 80%, rgba(243,243,255,1) 94%);
+    }
+
+    20% {
+        background: linear-gradient(50deg, rgba(243,243,255,1) 8%, rgba(0,0,0,1) 29%, rgba(1,33,69,1) 53%, rgba(31,78,162,1) 80%, rgba(69,139,233,1) 99%);
+    }
+
+    40% {
+        background: linear-gradient(50deg, rgba(69,139,233,1) 8%, rgba(243,243,255,1) 29%, rgba(0,0,0,1) 53%, rgba(1,33,69,1) 80%, rgba(31,78,162,1) 99%);
+    }
+
+    60% {
+        background: linear-gradient(50deg, rgba(31,78,162,1) 8%, rgba(69,139,233,1) 29%, rgba(243,243,255,1) 53%, rgba(0,0,0,1) 80%, rgba(1,33,69,1) 99%);
+    }
+
+    80% {
+        background: linear-gradient(50deg, rgba(1,33,69,1) 8%, rgba(31,78,162,1) 29%, rgba(69,139,233,1) 53%, rgba(243,243,255,1) 80%, rgba(0,0,0,1) 99%);
+    }
+
+    100% {
+        background: linear-gradient(50deg, rgba(0,0,0,1) 7%, rgba(1,33,69,1) 21%, rgba(31,78,162,1) 64%, rgba(69,139,233,1) 80%, rgba(243,243,255,1) 94%);
+    }
+}
+
+/* game */
+.canvasOnRight {
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    width: 39%;
+    height: 96%;
+    border-radius: 5%;
+    border: 6px solid white;
+    z-index:2
+}
+
+#replay {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    color: green;
+    display: none;
+    cursor: pointer;
+}
+
+#skills {
+    border-radius: 50%;
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    #story { width: 100% }
+    .story h1 { margin-bottom: 40px}
+    #skills { 
+        position: inherit;
+        width:100%;
+    }
+    #canvas1 { display: none}
+    #replay { display: none}
+}

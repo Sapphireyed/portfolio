@@ -1,0 +1,83 @@
+﻿$bgBlack: #0f1110;
+$emBlue: rgba(69,139,233,1);
+
+/*general*/
+body {
+    color:white;
+    background-color: $bgBlack;
+    margin: 0;
+    padding:0;
+    cursor: url('img/cursorSapph.png'), auto;
+}
+
+section {
+    margin-top: 120px;
+    position:relative;
+}
+.blue {
+    color: $emBlue
+}
+
+/* for ig screen only*/
+.lg-none { display: none }
+
+/*navbar*/
+#navContainer {
+    box-shadow: 0px 0px 10px white;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    nav {
+        font: 1em/1 Open Sans, Impact;
+        letter-spacing:3px;
+        color: rgba(255,255,255,.5);
+        text-align: center;
+        width: 65%;
+        background-image: url('img/mainBg.JPG');
+        background-size: cover;
+        font-size: 22px;
+        padding: 5px 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #nav {
+            padding-left: 150px;
+
+            a {
+                padding: 0 10px;
+                color: rgba(255,255,255,.5);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: white
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .md100 { width: 100% !important}
+    .md-none { display: none }
+}
+@media only screen and (max-width: 760px) {
+    .sm100 { width: 100%}
+    sm-none {display: none }
+}
+
+/*animations thatrepeat throughout the web*/
+
+/*underscore for headings*/
+@keyframes popup { // for underline below h1
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
